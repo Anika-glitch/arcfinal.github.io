@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Arcadia</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+
+	<link rel="stylesheet"
+    href="disp.css">
+	<style type="text/css">
+		
+		
+		
+@media (max-width: 375px){
+
+	
+}
+    </style>
+</head>
+	<body>
+<div class="topnav" id="myTopnav">
+  <a href="movement.html" class="active"><img src="logo.png" alt="" height="70px"></a>
+
+  <div class="dropdown">
+    <button class="dropbtn">projects
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Commercial</a>
+      <a href="#">Institutional</a>
+      <a href="#">Residential</a>
+    </div>
+  </div> 
+</div>
+
+</div>
+<div class= "container">
+  <video autoplay=""  loop="" muted="" >
+	<source src="Comp 1_2.mp4" type="video/mp4" width="100px">
+</video>
+</div>
+<div class="flex-container">
+  <div><img src="eigenBW.png" width="100%">  <div class="bottom-right"><h2>The EIGEN factory unit - Architecture and Landcsape</h2></div>
+</div>
+</div>
+<div class="flex-container2">
+ <div> <h1>><p>Site dimensions</p></h1></div>
+ <div><img src="eigenArtboard 3.jpg" width="100%" style="flex-grow: 10"></div>
+</div>
+<div class="flex-container3">
+  <div><img src="eigen - 1_.png" width="100%" ></div>
+ </div>
+
+ <div class="flex-container">
+  <div><img src="blueprint_centum.png" width="100%">  <div class="bottom-right"><h2>Centum - Landscape</h2></div>
+</div>
+</div>
+<div class="flex-container2">
+ <div> <h1>><p>Site dimensions</p></h1></div>
+ <div><img src="centum2.png" width="100%" style="flex-grow: 10"></div>
+</div>
+<div class="flex-container3">
+  <div><img src="centum1.png" width="100%" ></div><div><img src="line2.png" width="100%"></div>
+ </div>
+<footer>
+  <h3><p>CONTACT</p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p>+91 9844062012</p><p>pravin@arcadia.net.in, firmarcadia.com</p></h3>
+</footer>
+
+		<script>
+     
+gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".container",{ scrollTrigger:{ trigger: ".container", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back"});
+  gsap.to(".flex-container",{ scrollTrigger:{ trigger: ".flex-container", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back"});
+ 
+  gsap.to(".flex-container2",{ scrollTrigger:{ trigger: ".flex-container2", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back"});
+   
+  gsap.to(".flex-container3",{ scrollTrigger:{ trigger: ".flex-container3", toggleActions: "restart none none none",}
+  , duration:2, y:-100,x:-50, opacity:1,ease:"back"});
+
+
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+	
+</html>
+,
