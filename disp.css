@@ -12,7 +12,7 @@ video{
   text-align: center;
   color: white;
   display:flex;
-  width:100%;
+  width:100vh;
 }
 h3{
   color: white;
