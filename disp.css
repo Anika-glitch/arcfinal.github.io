@@ -16,6 +16,14 @@ h3{
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
   font-weight: lighter;
+	text-align: center;
+}
+h4{
+  color: grey;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
 }
  h1{
    color: white;
