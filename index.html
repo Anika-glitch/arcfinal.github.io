@@ -12,35 +12,46 @@
     <body>
         <div class="topnav" id="myTopnav">
             <a href="index.html" class="active"><img src="logo.png" alt="" height="70px"></a>
-          
-       
-            
-              <div class="dropdown">
-              <button class="dropbtn">projects
+        <div class="dropdown">
+              <button class="dropbtn">Explore projects &darr;
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
                   <a href="project1.html">Industrial</a>
-                <a href="#">Commercial</a>
-                <a href="#">Institutional</a>
-                <a href="#">Residential</a>
+                <a href="commercial.html">Commercial</a>
+                <a href="institutional.html">Institutional</a>
+                <a href="residential.html">Residential</a>
               </div>
             </div> 
-          
+          </div>
+          <div class="flex-container2">
+            <div><img src="Artboard 1.png" width="100%"> </div>
+            
+         
+            <div><img src="Artboard 2.png" width="100%"> </div>
+            </div>
            
-          </div>
-          
-          </div>
-      <div class= "container">
-      
-          <img src="landingpage_2_AdobeCreativeCloudExpress.gif" width="100%">
-    
-      </div>
+<div class="flex-container3">
+<div><img src="landing-hampi.png" width="100%"></div>
+<div class="flex-container4"><div><h1>With 25+ years of architecture, landscape and design, we are committed to sustaining both the natural environment and the cultural environment.  </h1><h1>We believe that the art of landscape architecture is simply about building on life.
+</h1></div></div>
+</div>
+</div>
+
+
+
+
+  
+      <footer>
+        <h4><p>CONTACT</p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p>+91 9844062012</p><p>pravin@arcadia.net.in, firmarcadia.com</p></h4>
+        <h3>	&copy; Arcadia 2022</h3>
+      </footer>
           <script>
-
-
-gsap.registerPlugin(ScrollTrigger);
-
+          gsap.registerPlugin(ScrollTrigger);
+          gsap.from(".flex-container2",{
+   duration:2, y:-60, opacity:1,ease:"back"});
+   gsap.from(".flex-container3",{
+   duration:2, y:-60, opacity:1,ease:"back"});
         </script>
 
     </body>

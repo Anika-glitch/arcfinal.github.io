@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Arcadia</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+
+	<link rel="stylesheet"
+    href="disp4.css">
+	<style type="text/css">
+		
+		
+		
+@media (max-width: 375px){
+
+	
+}
+    </style>
+</head>
+	<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><img src="logo.png" alt="" height="70px"></a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Commercial projects &darr;
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="project1.html">Industrial</a>
+      <a href="institutional.html">Institutional</a>
+      <a href="residential.html">Residential</a>
+    </div>
+  </div> 
+</div>
+
+</div>
+<div class= "container">
+ 
+	<img src="coorg1.gif" width="100%" >
+</video>
+</div>
+
+<div class="flex-container">
+  <div><h1>Heritage Resort / Hampi</h1></div>         <div><h2>The Resort is an ode to the architectural marvels of Vijaynagar.
+
+    An attempt with contemporary construction and design to capture the spirit of Hampi.</h2></div>
+  </div>
+  <div class="flex-container3">
+ <div><img src="hampi1.jpg" width="100%" ></div>
+    <div><img src="hampi2.png" width="100%" ></div>
+     </div>
+   
+  
+<div class="flex-container3">
+    <div><img src="hampi7.png" width="100%" ></div>
+    <div><img src="hampi8.png" width="100%"></div>
+  </div>
+
+
+  <div class="flex-container5">
+    <div><h1>Heritage Resort / Coorg</h1> <h2><p>Comprising of 24 rooms, low-rise structures on a hill side with a main block and an infinite edge pool right on top of the hill. </p>
+
+      <p>Designed with the concept of a village hamlet on a hill side.
+      Locally sourced materials like Laterite blocks were used for the construction.</p>
+    </div>
+    </div>
+    <div class="flex-container6">
+   <div><img src="coorg4.png" width="100%" ></div>
+      <div><img src="coorg2.png" width="100%" ></div>
+    </div>
+    <div class="flex-container6">
+       <div><img src="coorg3.png" width="100%" ></div>
+       <div><img src="hampi9.png" width="100%" ></div>
+       </div>
+
+
+
+<footer>
+  <h2><p>CONTACT</p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p>+91 9844062012</p><p>pravin@arcadia.net.in, firmarcadia.com</p></h2>
+  <h3>	&copy; Arcadia 2022</h3>
+</footer>
+
+		<script>
+     
+gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".container",{ scrollTrigger:{ trigger: ".container", toggleActions: "restart none none none",}
+  , duration:2, y:-100,ease:"back"});
+  gsap.to(".flex-container3",{ scrollTrigger:{ trigger: ".flex-container3", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back"});
+
+
+  gsap.to(".flex-container",{ scrollTrigger:{ trigger: ".flex-container", toggleActions: "restart none none none",}
+  , duration:2, y:-100,x:-50, opacity:1,ease:"back", srcub:2});
+  gsap.to(".flex-container5",{ scrollTrigger:{ trigger: ".flex-container5", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back", srcub:2});
+  gsap.to(".flex-container6",{ scrollTrigger:{ trigger: ".flex-container6", toggleActions: "restart none none none",}
+  , duration:2, y:-110, opacity:1,ease:"back", scrub:2});
+
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+	
+</html>
