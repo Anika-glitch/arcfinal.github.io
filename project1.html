@@ -6,7 +6,7 @@
 <title>Arcadia</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
 	<link rel="stylesheet"
     href="disp5.css">
@@ -22,50 +22,70 @@
   <a href="index.html" class="active"><img src="logo.png" alt="" height="70px"></a>
 
   <div class="dropdown">
-    <button class="dropbtn"> Industrial projects &darr;
+    <button class="dropbtn"> EXPLORE PROJECTS &darr;
       
     </button>
     <div class="dropdown-content">
-      <a href="commercial.html">Commercial</a>
+      <a href="commercial.html">Hospitality</a>
       <a href="institutional.html">Institutional</a>
       <a href="residential.html">Residential</a>
+      <a href="farmhouse.html">Farmhouse</a>
     </div>
   </div> 
 </div>
 
+<div class= "bg2">
+  
 </div>
-<div class= "container">
-<img src="ADMIN2.gif" width="100%">
+<div class="text">
+  <h6>
+   <p><i>INDUSTRIAL</i></p> 
+    
+ <li> <a href="#agro">Green Agro Pack</a></li>
+ <li> <a href="#eigen">Eigen</a></li>
+</h6>
 </div>
+<div class="flex-container3" id="agro">
+  <div class="text2"><h1>Green Agro Pack / Bangalore</h1><h5>Factory campus for Green Agro Pack, the largest producer and exporter of pickled Gherkins from India. Project included architecture and landscape of a campus with state of art manufacturing unit /production block with its own R&D unit, Testing lab, Admin office and various Staff utilities.</h5></div>
+  <div><img src="industry images/GA3.jpg" width="100%" ></div>
 </div>
-<div class="flex-container3">
-  <div><h1>Eigen / Bangalore</h1><h2>Architecture and Landscape for an industry leading metal stamping manufacturer. </h2></div>
-  <div><img src="eigen - 1_.png" width="100%" ></div>
+<div class="flex-container2">
+  <div><img src="industry images/GA2.jpg" width="100%"></div>
+  <div><img src="industry images/GA1.jpg" width="100%">
+  </div>
+  </div>
+<div class="flex-container3" id="eigen">
+  <div class="text2"><h1>Eigen / Bangalore</h1><h5>Architecture and Landscape for Eigen Engineering Campus, an industry leading metal stamping manufacturer. </h5></div>
+
    
 </div>
 </div>
 <div class="flex-container3">
- 
- </div>
+  <div><img src="industry images/E1.jpg" width="100%"></div>
+  <div><img src="industry images/E2.jpg" width="100%">
+  </div>
+  </div>
 <div class="flex-container3">
-  <div><img src="eigenBW.png" width="100%"></div>
-  <div><img src="eigenArtboard 3.jpg" width="100%">
+  <div><img src="industry images/E3.jpg" width="100%"></div>
+  <div><img src="industry images/E4.jpg" width="100%">
   </div>
   </div>
-  
+ 
 
-
+<a href="#myTopnav"><h4>Back to top 	&uarr;</h4> </a>
 
 
 <footer>
-  <h2><p>CONTACT</p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p>+91 9844062012</p><p>pravin@arcadia.net.in, firmarcadia.com</p></h2>
+  <h2><p><span class="iconify" data-icon="mdi:office-building"></span></p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p><span class="iconify" data-icon="carbon:phone-filled"></span</p><p>+91 9844062012</p><p><span class="iconify" data-icon="ic:outline-local-post-office"></span></p><p>pravin@arcadia.net.in, firmarcadia.com</p></h2>
   <h3>	&copy; Arcadia 2022</h3>
 </footer>
 
 		<script>
+ 
      
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.to(".bg2",{ scrollTrigger:{ trigger: ".bg2", toggleActions: "restart none none none",}
+  , duration:2, y:-100,ease:"back"});
   gsap.to(".container",{ scrollTrigger:{ trigger: ".container", toggleActions: "restart none none none",}
   , duration:2, y:-100, opacity:1,ease:"back"});
   gsap.to(".flex-container",{ scrollTrigger:{ trigger: ".flex-container", toggleActions: "restart none none none",}

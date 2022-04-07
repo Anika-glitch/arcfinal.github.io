@@ -1,47 +1,107 @@
 @charset "UTF-8";
+body{
+  height: 100%;
+  margin: 0;
+}
 footer{
  border-top: 0.1px solid teal;
 }
 
-video{
-  position: relative;
-  width:100%;
-}
-.container {
-  
-  margin-top: 100px;
-  position: relative;
-  text-align: center;
-  color: white;
-  display:flex;
-  width:100%;
-  background-image: url("coorg1.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+
+.text2{
+  width: 20%;
+
 
 }
-.ione{
-    align-self: flex-end;
+h4{
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: left;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
+a{
+  text-decoration: none;
+}
+
+
+.bg {
+  margin-top: 120px;
+  height: 80vh;
+  background-image: url("comm images/Hampi1.10.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text{
+ text-align: left;
+    position: absolute;
+background-color: rgba(0,0,0,0.5);
+    bottom: 30px;
+    right: 26px;
+    padding: 2%;
+ 
+}
+li{
+  list-style:decimal-leading-zero;
+}
+a:hover{
+color:black;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h6{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+ 
+ }
 h3{
-  color: grey;
-  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 11px;
   font-weight: lighter;
   text-align: center;
 }
  h1{
-   color: black;
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 30px;
-   font-weight: lighter;
+  color: teal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10vh;
+  font-weight: lighter;
+ 
  }
+ h6{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+ 
+ }
+ 
  h2{
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 13px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
   font-weight: lighter;
   text-align: center;
+ }
+ h5{
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+
+  padding: 1%;
+ }
+ .text2{
+width: 20%;
+padding: 2%;
  }
 .flex-container2{
   display: flex;
@@ -56,6 +116,15 @@ h3{
 }
 .flex-container4>div{
  margin: 10px;
+}
+.flex-container5{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.flex-container5>div{
+width: 50%;
 }
 .flex-container7{
   display: flex;
@@ -111,19 +180,16 @@ h3{
 
  
 }
-body{
-background-color: white;
-}
 
-.navbar{
-	margin-top: 5%;
-}
 
+footer{
+  background-color: teal;
+}
 
 
 .topnav {
   overflow: hidden;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 	
 }
@@ -132,11 +198,11 @@ background-color: white;
   float: left;
   display: block;
   color: black;
-
+font-weight: 200;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .active {
@@ -149,19 +215,23 @@ background-color: white;
 }
 
 .dropdown {
+  background-color: teal;
+  color: white;
   float: left;
   overflow: hidden;
   padding-top: 30px;
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 15px;    
   border: none;
   outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  padding: 17px 16px;
+  margin-top: 20px;
+  font-weight: 200;
+  background-color: teal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .dropdown-content {
@@ -184,7 +254,7 @@ background-color: white;
 
 .topnav a:hover, .dropdown:hover .dropbtn {
  
-  color: teal;
+  color: black;
 }
 
 .dropdown-content a:hover {
@@ -210,15 +280,24 @@ background-color: white;
 }
 
 @media screen and (max-width: 600px) {
-	h2{
-		font-size: 11px;
+  .text2{
+    width: 100%;
+  }
+  h2{
+		font-size: 13px;
 	}
   h1{
-		font-size: 20px;
+		font-size: 25px;
 	}
   h3{
-    font-size: 9px;
+    font-size: 12px;
   }
+  h4{
+    font-size: 15px;
+  }
+	footer{
+		font-size: 12px;
+	}
 
   .flex-container3{
     flex-direction: column;
@@ -228,6 +307,31 @@ background-color: white;
     width: 100%;
   
 
+  }
+  .flex-container5{
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  .flex-container5>div{
+    width: 100%;
+  
+
+  }
+  .bg {
+    margin-top: 120px;
+    height: 80vh;
+    background-image: url("comm images/Hampi1.10.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+  li{
+    list-style:decimal-leading-zero;
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
   .flex-container6{
     flex-direction: column;

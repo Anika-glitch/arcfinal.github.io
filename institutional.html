@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,18 +6,15 @@
 <title>Arcadia</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
 	<link rel="stylesheet"
-    href="disp2.css">
+    href="disp5.css">
 	<style type="text/css">
 		
 		
 		
-@media (max-width: 375px){
 
-	
-}
     </style>
 </head>
 	<body>
@@ -25,65 +22,76 @@
   <a href="index.html" class="active"><img src="logo.png" alt="" height="70px"></a>
 
   <div class="dropdown">
-    <button class="dropbtn">Institutional projects &darr;
+    <button class="dropbtn">EXPLORE PROJECTS &darr;
       
     </button>
     <div class="dropdown-content">
       <a href="project1.html">Industrial</a>
-      <a href="commercial.html">Commercial</a>
+      <a href="commercial.html">Hospitality</a>
       <a href="residential.html">Residential</a>
+      <a href="farmhouse.html">Farmhouse</a>
     </div>
   </div> 
 </div>
 
 </div>
-<div class= "container">
- 
-	<img src="instit4.gif" width="100%" >
-</video>
+<div class= "bg">
+  
+</div>
+<div class="text">
+  <h6>
+   <p><i>INSTITUTES</i></p> 
+    
+ <li> <a href="#valistus">Valistus School</a></li>
+ <li> <a href="#intel">School for Intel</a></li>
+</h6>
 </div>
 
-<div class="flex-container">
-  <div><h1>Valistus School / Bangalore</h1></div>    
+<div class="flex-container" id="valistus">
+  <div><h1>Valistus School / Bangalore</h1><h5>Landscape and masterplan for a 5 acre international school. Project included landscaping for a zen garden, a sport complex and an amphitheatre.</h5></div>    
   </div>
   <div class="flex-container3">
- <div><img src="VSArtboard 3.jpg" width="100%" ></div>
-    <div><img src="VSArtboard 8.jpg" width="100%" ></div>
+    <div><img src="inst images/VS4.jpg" width="100%" ></div>
+       <div><img src="inst images/VS5.jpg" width="100%" ></div>
+        </div>
+  <div class="flex-container3">
+ <div><img src="inst images/VSArtboard 3.jpg" width="100%" ></div>
+    <div><img src="inst images/VSArtboard 8.jpg" width="100%" ></div>
      </div>
    
   
 <div class="flex-container3">
-    <div><img src="VS 6.png" width="100%" ></div>
-    <div><img src="VSArtboard 9.jpg" width="100%"></div>
+    <div><img src="inst images/VS 6.png" width="100%" ></div>
+    <div><img src="inst images/VSArtboard 9.jpg" width="100%"></div>
   </div>
 
 
-  <div class="flex-container5">
-    <div><h1>School Building for Intel / Nagapattnam</h1> 
+  <div class="flex-container5" id="intel">
+    <div><h1>School Building for Intel / Nagapattnam</h1> <h5>6500 sqft Award winning school for a village, as part of a corporate social responsibilty program by Intel. Project had 12 classrooms with labs, a library, and anganwadi (playschool). The building was sustainable and included a rain water harvesting system from the roof.  </h5>
     </div>
     </div>
  
     <div class="flex-container6">
-       <div><img src="ARArtboard 8.jpg" width="100%" ></div>
-       <div><img src="ARArtboard 3.jpg" width="100%" ></div>
+       <div><img src="inst images/ARArtboard 8.jpg" width="100%" ></div>
+       <div><img src="inst images/ARArtboard 3.jpg" width="100%" ></div>
        </div>
        <div class="flex-container6">
-        <div><img src="AR3Artboard 8.jpg" width="100%"></div>
-        <div><img src="AR3Artboard 11.jpg" width="100%" >
+        <div><img src="inst images/AR3Artboard 8.jpg" width="100%"></div>
+        <div><img src="inst images/AR3Artboard 11.jpg" width="100%" >
          </div>
          </div>
 
-
-<footer>
-  <h2><p>CONTACT</p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p>+91 9844062012</p><p>pravin@arcadia.net.in, firmarcadia.com</p></h2>
-  <h3>	&copy; Arcadia 2022</h3>
-</footer>
+         <a href="#myTopnav"><h4>Back to top 	&uarr;</h4> </a>
+         <footer>
+          <h2><p><span class="iconify" data-icon="mdi:office-building"></span></p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p><span class="iconify" data-icon="carbon:phone-filled"></span</p><p>+91 9844062012</p><p><span class="iconify" data-icon="ic:outline-local-post-office"></span></p><p>pravin@arcadia.net.in, firmarcadia.com</p></h2>
+          <h3>	&copy; Arcadia 2022</h3>
+        </footer>
 
 		<script>
      
 gsap.registerPlugin(ScrollTrigger);
 
-  gsap.to(".container",{ scrollTrigger:{ trigger: ".container", toggleActions: "restart none none none",}
+  gsap.to(".bg",{ scrollTrigger:{ trigger: ".bg", toggleActions: "restart none none none",}
   , duration:2, y:-100,ease:"back"});
   gsap.to(".flex-container3",{ scrollTrigger:{ trigger: ".flex-container3", toggleActions: "restart none none none",}
   , duration:2, y:-100, opacity:1,ease:"back"});

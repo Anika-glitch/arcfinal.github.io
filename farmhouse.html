@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Arcadia</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+	<link rel="stylesheet"
+    href="disp3.css">
+
+</head>
+	<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"><img src="logo.png" alt="" height="70px"></a>
+
+  <div class="dropdown">
+    <button class="dropbtn">EXPLORE PROJECTS 
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="project1.html">Industrial</a>
+      <a href="institutional.html">Institutional</a>
+      <a href="residential.html">Residential</a>
+      <a href="commercial.html">Hospitality</a>
+    </div>
+  </div> 
+</div>
+<div class= "bg2">
+  
+</div>
+<div class="text">
+  <h6>
+   <p><i>FARMHOUSES</i></p> 
+    
+ <li> <a href="#44">Weekend Home</a></li>
+ <li> <a href="#res">Residential Farmhouse</a></li>
+
+</h6>
+</div>
+</div>
+<div class="flex-container5" id="44">
+  <div class="text2"><h1>Farmhouse / Weekend home</h1><p><h5> This farmhouse that doubles as a vacation home strikes the perfect balance between rustic and luxury. With large windows and canopy's it allows the residents to feel one with the nature that surrounds them.
+      </h5></p></div>
+  </div>
+  <div class="flex-container6">
+        
+    <div><img src="farm images/F6.jpg" width="100%" ></div>
+    <div><img src="farm images/F4.jpg" width="100%" ></div>
+     </div>
+    <div class="flex-container6">
+        
+        <div><img src="farm images/F1.jpg" width="100%" ></div>
+        <div><img src="farm images/F2.jpg" width="100%" ></div>
+         </div>
+
+         
+<div class="flex-container3" id="res">
+      
+  <div class="text2"><h1> Residential Farmhouse / Vacation home </h1><h5>In the midst of a coconut grove, this farmhouse seamlessly blends in to its environment with the use of natural materials. Located next to heritage sites, it makes the perfect weekend getaway.</h5></div>
+  <div><img src="farm images/G3.jpg" width="100%" ></div>
+   </div>
+
+  
+<div class="flex-container6">
+    
+    <div><img src="farm images/G1.jpg" width="100%" ></div>
+    <div><img src="farm images/G2.jpg" width="100%" ></div>
+    
+     </div>
+     
+
+
+         <a href="#myTopnav"><h4>Back to top 	&uarr;</h4> </a>
+
+         <footer>
+          <h2><p><span class="iconify" data-icon="mdi:office-building"></span></p><p>Arcadia, #44, amarjyoti layout, Domlur, Bangalore</p><p><span class="iconify" data-icon="carbon:phone-filled"></span</p><p>+91 9844062012</p><p><span class="iconify" data-icon="ic:outline-local-post-office"></span></p><p>pravin@arcadia.net.in, firmarcadia.com</p></h2>
+          <h3>	&copy; Arcadia 2022</h3>
+        </footer>
+
+		<script>
+     
+gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".bg2",{ scrollTrigger:{ trigger: ".bg2", toggleActions: "restart none none none",}
+  , duration:2, y:-100,ease:"back"});
+  gsap.to(".flex-container3",{ scrollTrigger:{ trigger: ".flex-container3", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back"});
+
+
+  gsap.to(".flex-container",{ scrollTrigger:{ trigger: ".flex-container", toggleActions: "restart none none none",}
+  , duration:2, y:-100,x:-50, opacity:1,ease:"back", srcub:2});
+  gsap.to(".flex-container5",{ scrollTrigger:{ trigger: ".flex-container5", toggleActions: "restart none none none",}
+  , duration:2, y:-100, opacity:1,ease:"back", srcub:2});
+  gsap.to(".flex-container6",{ scrollTrigger:{ trigger: ".flex-container6", toggleActions: "restart none none none",}
+  , duration:2, y:-110, opacity:1,ease:"back", scrub:2});
+
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+	
+</html>
